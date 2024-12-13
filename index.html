@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bubbles</title>
     <script>
-        function setBubbleProps(elementQuery, x, y, hue, size) {
-            let element = document.querySelector(elementQuery);
-
-            element.style.position = "absolute";
+        function setBubbleProps(elementId, x, y, hue, size) {
+            let element = document.getElementById(elementId);
 
             element.style.top = `${y}px`;
             element.style.left = `${x}px`;
@@ -18,13 +16,23 @@
 
             element.style.filter = `hue-rotate(${hue}deg)`;
         }
+
+        function createBubble(elementId, x, y, hue, size) {
+            let element = document.createElement("img");
+            element.style.position = "absolute";
+            element.src = "bubble.svg";
+            element.id = elementId;
+
+            document.body.appendChild(element)
+
+            setBubbleProps(elementId, x, y, hue, size);
+        }
     </script>
 </head>
 <body>
-    <img id="bubble" src="bubble.svg">
-
-    <script>
-        setBubbleProps("#bubble", 100, 100, 45, 100);
+    <script defer>
+        createBubble("bubble", 0, 0, 0, 400);
+        setBubbleProps("bubble", 100, 100, 45, 100);
     </script>
 </body>
 </html>
