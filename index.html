@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bubbles</title>
+    <script>
+        function setBubbleProps(elementQuery, x, y, hue, size) {
+            let element = document.querySelector(elementQuery);
+
+            element.style.position = "absolute";
+
+            element.style.top = `${y}px`;
+            element.style.left = `${x}px`;
+
+            element.style.width = `${size}px`
+            element.style.height = `${size}px`
+
+            element.style.filter = `hue-rotate(${hue}deg)`;
+        }
+    </script>
 </head>
 <body>
-    <img src="bubble.svg">
+    <img id="bubble" src="bubble.svg">
+
+    <script>
+        setBubbleProps("#bubble", 100, 100, 45, 100);
+    </script>
 </body>
 </html>
