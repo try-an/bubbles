@@ -31,8 +31,21 @@
 </head>
 <body>
     <script defer>
-        createBubble("bubble", 0, 0, 0, 400);
-        setBubbleProps("bubble", 100, 100, 45, 100);
+        let bubbleY = innerHeight;
+        let bubbleX = innerWidth/2;
+        let hue = 0;
+        let size = 200;
+
+        createBubble("bubble", bubbleX, bubbleY, hue, size);
+        
+        setInterval(() => {
+            if (bubbleY > 0 - size) {
+                bubbleY -= 10;
+                hue += 1;
+                setBubbleProps("bubble", bubbleX, bubbleY, hue, size);
+            }
+        }, 1000/60)
+        
     </script>
 </body>
 </html>
