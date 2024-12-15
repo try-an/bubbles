@@ -45,17 +45,35 @@
 
         createBubble("bubble", bubbleX, bubbleY, hue, size);
 
-        function moveUp() {
-            bubbleY -= 10;
+        function moveUp(bubbleId, initialY, endY, initialHue, speed) {
+            let bubbleElement = document.getElementById(bubbleId);
+
+            // Get x pos
+            let x = bubbleElement.style.left;
+            x = parseInt(x.slice(0, -2));
+
+            // Get size
+            let size = bubbleElement.style.width;
+            size = parseInt(size.slice(0, -2));
+
+            let hue = initialHue;
+            let y = initialY;
+
+            // Move y pos and shift hue
+            y -= speed;
             hue += 1;
-            setBubbleProps("bubble", bubbleX, bubbleY, hue, size);
-            
-            if (bubbleY > 0 - size) {
-                requestAnimationFrame(moveUp)
+
+            setBubbleProps(bubbleId, x, y, hue, size);
+
+            if (y > endY) {
+                // Next frame
+                requestAnimationFrame(() => {
+                    moveUp(bubbleId, y, endY, hue, speed)
+                });
             }
         }
 
-        moveUp();
+        moveUp("bubble", bubbleY, 0 - size, hue, 10);
     </script>
 </body>
 </html>
