@@ -44,15 +44,18 @@
         let size = 200;
 
         createBubble("bubble", bubbleX, bubbleY, hue, size);
-        
-        setInterval(() => {
+
+        function moveUp() {
+            bubbleY -= 10;
+            hue += 1;
+            setBubbleProps("bubble", bubbleX, bubbleY, hue, size);
+            
             if (bubbleY > 0 - size) {
-                bubbleY -= 10;
-                hue += 1;
-                setBubbleProps("bubble", bubbleX, bubbleY, hue, size);
+                requestAnimationFrame(moveUp)
             }
-        }, 1000/60)
-        
+        }
+
+        moveUp();
     </script>
 </body>
 </html>
