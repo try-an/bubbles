@@ -25,9 +25,9 @@
      inkscape:deskcolor="#505050"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="1"
-     inkscape:cx="87"
-     inkscape:cy="124.5"
+     inkscape:zoom="11.313709"
+     inkscape:cx="9.6343299"
+     inkscape:cy="8.8830289"
      inkscape:window-width="1536"
      inkscape:window-height="796"
      inkscape:window-x="0"
@@ -40,7 +40,7 @@
        inkscape:collect="always"
        id="linearGradient7625">
       <stop
-         style="stop-color:#000000;stop-opacity:0.60000002;"
+         style="stop-color:#000000;stop-opacity:0.14838709;"
          offset="0"
          id="stop7621" />
       <stop
@@ -65,7 +65,7 @@
        id="linearGradient3588">
       <stop
          style="stop-color:#ff5a5a;stop-opacity:0;"
-         offset="0.54340839"
+         offset="0.80707401"
          id="stop3584" />
       <stop
          style="stop-color:#ff0000;stop-opacity:0.23870967;"
@@ -94,7 +94,7 @@
        fy="79.4645"
        r="38.546688"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.0784953,0,0,1.0784944,-39.972935,-44.129618)" />
+       gradientTransform="matrix(1.0795734,0,0,1.0795704,-40.112857,-44.273605)" />
     <radialGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3557"
@@ -105,7 +105,7 @@
        fy="79.4645"
        r="38.546688"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.0784953,0,0,1.0784944,-39.972935,-44.129618)" />
+       gradientTransform="matrix(1.0795734,0,0,1.0795704,-40.112857,-44.273605)" />
     <radialGradient
        inkscape:collect="always"
        xlink:href="#linearGradient6824"
@@ -116,7 +116,7 @@
        fy="75.228241"
        r="37.975189"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-2.0549831,2.4049924,-2.7509331,-2.3505736,227.30873,108.1414)" />
+       gradientTransform="matrix(-2.0570373,2.4073919,-2.7536831,-2.3529188,227.83103,108.25072)" />
     <radialGradient
        inkscape:collect="always"
        xlink:href="#linearGradient7625"
@@ -127,41 +127,41 @@
        fy="47.613113"
        r="36.391171"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.2257788,0,0,1.2257779,-1.7916028,-2.9706736)" />
+       gradientTransform="matrix(1.2270041,0,0,1.2270009,-1.8933574,-3.0735967)" />
   </defs>
   <g
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
      id="layer1">
     <ellipse
-       style="fill:url(#radialGradient7627);fill-opacity:1;stroke:none;stroke-width:1.40106;stroke-dasharray:none;paint-order:markers stroke fill"
+       style="fill:url(#radialGradient7627);fill-opacity:1;stroke:none;stroke-width:1.40246;stroke-dasharray:none;paint-order:markers stroke fill"
        id="path7619"
-       cx="55.392475"
-       cy="55.392437"
+       cx="55.347878"
+       cy="55.34774"
        inkscape:label="Shadow"
-       rx="44.607525"
-       ry="44.607491" />
+       rx="44.652115"
+       ry="44.651997" />
     <ellipse
-       style="fill:url(#radialGradient6828);fill-opacity:1;stroke:none;stroke-width:1.23272;stroke-dasharray:none;paint-order:markers stroke fill"
+       style="fill:url(#radialGradient6828);fill-opacity:1;stroke:none;stroke-width:1.23395;stroke-dasharray:none;paint-order:markers stroke fill"
        id="path1514-6"
-       cx="40.956062"
-       cy="40.956032"
+       cx="41.292072"
+       cy="40.998318"
        inkscape:label="Light"
-       rx="40.956062"
-       ry="40.956032" />
+       rx="40.997002"
+       ry="40.996895" />
     <path
        id="path6757"
-       style="fill:#ffffff;stroke-width:2.32003;paint-order:markers stroke fill"
+       style="fill:#ffffff;stroke-width:2.32235;paint-order:markers stroke fill"
        inkscape:label="Shine"
-       d="m 33.833073,12.050875 c 1.205483,1.089248 -4.704602,5.730749 -11.183641,11.425921 -6.47904,5.695174 -10.275373,10.169692 -12.279036,9.198123 -1.6800216,-0.814636 0.339889,-10.84574 6.818928,-16.540914 6.479039,-5.695172 15.263156,-5.330603 16.643749,-4.08313 z"
+       d="m 33.766929,11.962939 c 1.206688,1.090335 -4.709306,5.736467 -11.194821,11.437321 -6.485516,5.700856 -10.285644,10.179838 -12.29131,9.207299 -1.6817004,-0.815448 0.340229,-10.85656 6.825744,-16.557416 6.485516,-5.700854 15.278414,-5.335921 16.660387,-4.087204 z"
        sodipodi:nodetypes="sssss" />
     <ellipse
-       style="fill:url(#radialGradient3590);fill-opacity:1;stroke:url(#radialGradient3592);stroke-width:1.23272;stroke-dasharray:none;paint-order:markers stroke fill"
+       style="fill:url(#radialGradient3590);fill-opacity:1;stroke:url(#radialGradient3592);stroke-width:1.03403;stroke-dasharray:none;paint-order:markers stroke fill"
        id="path1514"
-       cx="41.572422"
-       cy="41.572392"
+       cx="41.514015"
+       cy="41.513908"
        inkscape:label="RedBubble"
-       rx="40.956062"
-       ry="40.956032" />
+       rx="40.997002"
+       ry="40.996895" />
   </g>
 </svg>
