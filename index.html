@@ -27,23 +27,6 @@
 
             setBubbleProps(elementId, x, y, hue, size);
         }
-    </script>
-
-    <style>
-        body {
-            overflow: hidden;
-            background-color: gainsboro;
-        }
-    </style>
-</head>
-<body>
-    <script defer>
-        let bubbleY = innerHeight;
-        let bubbleX = innerWidth/2;
-        let hue = 0;
-        let size = 200;
-
-        createBubble("bubble", bubbleX, bubbleY, hue, size);
 
         function moveUp(bubbleId, initialY, endY, initialHue, speed) {
             let bubbleElement = document.getElementById(bubbleId);
@@ -72,7 +55,23 @@
                 });
             }
         }
+    </script>
 
+    <style>
+        body {
+            overflow: hidden;
+            background-color: gainsboro;
+        }
+    </style>
+</head>
+<body>
+    <script defer>
+        let bubbleY = innerHeight;
+        let bubbleX = innerWidth/2;
+        let hue = 0;
+        let size = 200;
+
+        createBubble("bubble", bubbleX, bubbleY, hue, size);
         moveUp("bubble", bubbleY, 0 - size, hue, 10);
     </script>
 </body>
